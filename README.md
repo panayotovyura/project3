@@ -1,3 +1,5 @@
+https://travis-ci.org/panayotovyura/project3.svg?branch=master
+
 project3
 ========
 

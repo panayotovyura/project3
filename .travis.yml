@@ -13,3 +13,7 @@ before_script:
   - php app/console doctrine:fixtures:load -n --env=test
 script:
   - phpunit -c app
+after_success:
+  - ./bin/phpcs --standard=psr2 src
+  - ./bin/phpmd src text cleancode,codesize,controversial,design,unusedcode
+  - ./bin/phpcpd src
