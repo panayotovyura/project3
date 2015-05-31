@@ -1,0 +1,25 @@
+services:
+    sonata.admin.jam_type:
+        class: Levi9\JamArchiveBundle\Admin\JamTypeAdmin
+        tags:
+            - name: sonata.admin
+              manager_type: orm
+              group: "jam.group.enumerations"
+              label: "jam.type.mainlabel"
+              label_catalogue: "messages"
+        arguments:
+            - ~
+            - Levi9\JamArchiveBundle\Entity\JamType
+            - ~
+    sonata.admin.jam_year:
+        class: Levi9\JamArchiveBundle\Admin\JamYearAdmin
+        tags:
+            - name: sonata.admin
+              manager_type: orm
+              group: "jam.group.enumerations"
+              label: "jam.year.mainlabel"
+              label_catalogue: "messages"
+        arguments:
+            - ~
+            - Levi9\JamArchiveBundle\Entity\JamYear
+            - ~
