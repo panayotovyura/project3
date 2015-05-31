@@ -1,0 +1,21 @@
+Levi9\JamArchiveBundle\Entity\JamType:
+    type0:
+        name: raspberries
+    type1:
+        name: strawberries
+    type2:
+        name: blueberries
+
+Levi9\JamArchiveBundle\Entity\JamYear:
+    year1:
+        name: 2013
+    year2:
+        name: 2014
+    year3:
+        name: 2015
+
+Levi9\JamArchiveBundle\Entity\JamJar:
+    jam{1..20}:
+        type: @type*
+        year: @year*
+        comment: <randomElement(['good', 'bad', ''])>
