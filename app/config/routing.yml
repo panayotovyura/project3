@@ -1,0 +1,7 @@
+levi9_jam_archive:
+    resource: "@Levi9JamArchiveBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+
+
