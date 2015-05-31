@@ -35,3 +35,5 @@ services:
             - ~
             - Levi9\JamArchiveBundle\Entity\JamJar
             - ~
+        calls:
+            - [ setJamJarService, [@jam_jar]]

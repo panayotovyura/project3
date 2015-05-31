@@ -1,0 +1,4 @@
+services:
+    jam_jar:
+        class:        Levi9\JamArchiveBundle\Services\JamJarService
+        arguments:    ["@=service('doctrine').getManager()"]
