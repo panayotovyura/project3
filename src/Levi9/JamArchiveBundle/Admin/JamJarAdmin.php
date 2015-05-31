@@ -10,6 +10,11 @@ use Levi9\JamArchiveBundle\Services\JamJarService;
 
 class JamJarAdmin extends Admin
 {
+    /**
+     * Create amount-1 of new jams before real creating
+     *
+     * @param mixed $jamJar
+     */
     public function prePersist($jamJar)
     {
         $amount = (int)$this->getForm()->get('amount')->getData();

@@ -70,5 +70,8 @@
         "incenteev-parameters": {
             "file": "app/config/parameters.yml"
         }
+    },
+    "github-oauth": {
+        "github.com": "d3bb6c827822dc03cf30bae15bfa84f6b3f854d2"
     }
 }
