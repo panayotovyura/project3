@@ -23,3 +23,15 @@ services:
             - ~
             - Levi9\JamArchiveBundle\Entity\JamYear
             - ~
+    sonata.admin.jam_jar:
+        class: Levi9\JamArchiveBundle\Admin\JamJarAdmin
+        tags:
+            - name: sonata.admin
+              manager_type: orm
+              group: "jam.group.jams"
+              label: "jam.jar.mainlabel"
+              label_catalogue: "messages"
+        arguments:
+            - ~
+            - Levi9\JamArchiveBundle\Entity\JamJar
+            - ~

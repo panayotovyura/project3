@@ -24,7 +24,7 @@ class JamJar
     /**
      * @var string
      *
-     * @ORM\Column(name="comment", type="text")
+     * @ORM\Column(name="comment", type="text", nullable=true)
      */
     private $comment;
 
