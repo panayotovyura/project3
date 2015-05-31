@@ -1,4 +1,4 @@
-{<img src="https://travis-ci.org/panayotovyura/project3.svg?branch=master" alt="Build Status" />}[https://travis-ci.org/panayotovyura/project3]
+<a href="https://travis-ci.org/panayotovyura/project3" target=_blank><img src="https://travis-ci.org/panayotovyura/project3.svg?branch=master" alt="Build Status"></a>
 
 project3
 ========
