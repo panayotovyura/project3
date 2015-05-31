@@ -1,4 +1,4 @@
-https://travis-ci.org/panayotovyura/project3.svg?branch=master
+<img src="https://travis-ci.org/panayotovyura/project3.svg?branch=master">
 
 project3
 ========
