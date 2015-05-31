@@ -29,12 +29,12 @@ class JamJar
     private $comment;
 
     /**
-     * @ORM\ManyToOne(targetEntity="JamType")
+     * @ORM\ManyToOne(targetEntity="JamType", cascade={"persist"})
      */
     private $type;
 
     /**
-     * @ORM\ManyToOne(targetEntity="JamYear")
+     * @ORM\ManyToOne(targetEntity="JamYear", cascade={"persist"})
      */
     private $year;
 

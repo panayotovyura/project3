@@ -25,7 +25,7 @@ class JamJarService
      */
     public function cloneJams(JamJar $jamJar, $amount)
     {
-        if (!is_int($amount) && $amount < 1) {
+        if (!is_int($amount) || $amount < 1) {
             return;
         }
 
