@@ -29,7 +29,8 @@ class JamJarService
             return;
         }
 
-        while ($amount--) {
+        while (--$amount) { // change to test PR builds status
+            // todo: it's better to make additional service for cloning. it will be easier to test this class
             $cloneJamJar = clone $jamJar;
             $this->entityManager->persist($cloneJamJar);
         }

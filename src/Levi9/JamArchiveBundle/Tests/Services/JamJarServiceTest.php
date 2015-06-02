@@ -33,10 +33,12 @@ class JamJarServiceTest extends WebTestCase
     {
         $client = self::createClient();
         $container = $client->getContainer();
+
+        // in this case it will be functional test but not unit. use mocks to replace real objects
         $this->jamJarService = $container->get('jam_jar');
         $this->entityManager = $container->get('doctrine')->getManager();
         $this->jamJarRepository = $this->entityManager->getRepository('Levi9JamArchiveBundle:JamJar');
-        $this->entityManager->beginTransaction();
+        $this->entityManager->beginTransaction(); // in unit test no need to run transaction, event db is not needed
     }
 
     /**
@@ -97,6 +99,7 @@ class JamJarServiceTest extends WebTestCase
 
     public function getNewJamJar()
     {
+        // todo: ideally in unit test you should only call 'new' once for your testing object (e.g. jamService)
         $jamJar = new JamJar();
         $jamJar->setComment('good');
 
