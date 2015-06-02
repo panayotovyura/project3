@@ -1,4 +1,6 @@
 Levi9\JamArchiveBundle\Entity\JamType:
+    # todo: type{0..x}:
+    #           name: <randomElement(['raspberries', 'strawberries', 'blueberries', ...])>
     type0:
         name: raspberries
     type1:
@@ -7,6 +9,8 @@ Levi9\JamArchiveBundle\Entity\JamType:
         name: blueberries
 
 Levi9\JamArchiveBundle\Entity\JamYear:
+    # todo: year{0..y}:
+    #           name (unique): <numberBetween(1990, 2015)>
     year1:
         name: 2013
     year2:
@@ -19,3 +23,4 @@ Levi9\JamArchiveBundle\Entity\JamJar:
         type: @type*
         year: @year*
         comment: <randomElement(['good', 'bad', ''])>
+        # comment: 50%? <randomElement(['good', 'bad', 'awesome', ...]>

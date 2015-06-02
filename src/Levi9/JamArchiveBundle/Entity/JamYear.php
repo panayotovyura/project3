@@ -22,7 +22,7 @@ class JamYear
     private $id;
 
     /**
-     * @var string
+     * @var string todo: this is year, it's better to use integer type
      *
      * @ORM\Column(name="name", type="string", length=255, unique=true)
      */

@@ -12,3 +12,7 @@ Analysis Tools:
 2. PHP Mess Detector: ./bin/phpmd src html cleancode,codesize,controversial,design,naming,unusedcode --reportfile md-report.html
 
 3. PHP Copy/Paste Detector: ./bin/phpcpd src
+
+// composer comments:
+// todo: you can already use symfony ~2.7 (without @beta, it's already released) :)
+// todo: 'github-oauth' section should be inside 'config',
