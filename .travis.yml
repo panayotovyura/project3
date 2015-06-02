@@ -6,7 +6,7 @@ php:
   - hhvm
   - nightly
 install:
-# todo: - composer self-update
+  - composer self-update
   - composer install
 before_script:
   - php app/console doctrine:database:create --env=test

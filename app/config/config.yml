@@ -83,7 +83,7 @@ swiftmailer:
 
 hautelook_alice:
     locale: en_US   # default
-    seed: 1         # default
+    seed: 2         # default
 
 sonata_block:
     default_contexts: [cms]

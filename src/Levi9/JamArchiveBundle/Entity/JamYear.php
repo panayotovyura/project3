@@ -22,9 +22,9 @@ class JamYear
     private $id;
 
     /**
-     * @var string todo: this is year, it's better to use integer type
+     * @var integer
      *
-     * @ORM\Column(name="name", type="string", length=255, unique=true)
+     * @ORM\Column(name="name", type="integer", unique=true)
      */
     private $name;
 
@@ -63,6 +63,6 @@ class JamYear
 
     public function __toString()
     {
-        return $this->getName();
+        return (string)$this->getName();
     }
 }

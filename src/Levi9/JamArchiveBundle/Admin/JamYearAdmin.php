@@ -12,7 +12,7 @@ class JamYearAdmin extends Admin
     // Fields to be shown on create/edit forms
     protected function configureFormFields(FormMapper $formMapper)
     {
-        $formMapper->add('name', 'text', ['label' => 'jam.year.label']);
+        $formMapper->add('name', 'number', ['label' => 'jam.year.label']);
     }
 
     // Fields to be shown on filter forms
